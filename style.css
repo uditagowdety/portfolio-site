@@ -1,7 +1,16 @@
-body {
+/* body {
   background-image: url('bg.png');
   background-size: fill;   
   background-position: center;  
   height: 100vh;  
   margin: 0;
+} */
+
+.port{
+  font-style: italic;
+}
+
+.head{
+  font-size: xx-large;
+  justify-items: center;
 }
