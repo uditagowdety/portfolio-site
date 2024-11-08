@@ -7,7 +7,7 @@ html, body {
   align-items: center;      /* Center vertically */
   /* flex-direction: column; */
   font-family: 'Manrope', sans-serif;
-  background-image: url("/assets/bg2.jpg");
+  /* background-image: url("/assets/bg2.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,11 +25,16 @@ html, body {
   transition: font-weight 0.3s, font-family 0.3s;
 }
 
+
 #portfolio span:hover {
   font-weight: bold;
   font-style: italic;
   font-family: 'Playfair Display', serif;
+  color: #000000; /* Neon pink */
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0099, 0 0 30px #ff00ff;
 }
+
+
 
 .head {
   position: absolute;
