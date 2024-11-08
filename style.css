@@ -19,10 +19,17 @@ html, body {
   justify-content: center;
 }
 
+@keyframes sparkle {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 #portfolio span {
   font-size: 100px;
   font-weight: normal;
   transition: font-weight 0.3s, font-family 0.3s;
+  position: relative;
 }
 
 
@@ -34,7 +41,16 @@ html, body {
   text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0099, 0 0 30px #ff00ff;
 }
 
-
+/* #portfolio span:hover::after {
+  content: '✨';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: sparkle 1s infinite;
+  font-size: 24px;
+  color: gold;
+} (IMPLEMENTATION'S KINDA EH BUT COULD BE USED IN A DIFF WAY)*/  
 
 .head {
   position: absolute;
@@ -47,6 +63,12 @@ html, body {
 
 sup {
   font-size: small;
+}
+
+.file-icon{
+  width:80px;
+  height: auto;
+  margin-top: 20px;
 }
 
 .footer {
