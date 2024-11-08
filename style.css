@@ -1,44 +1,50 @@
-html,body {
-  /* height: 100%;  
-  margin: 0; */
+html, body {
+  height: 100%;
+  margin: 0;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Manrope',sans-serif;
-}
-
-body{
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  /* flex-direction: column; */
+  font-family: 'Manrope', sans-serif;
   background-image: url("/assets/bg2.jpg");
-  background-size: cover;   
-  background-position: center;  
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
 }
 
-.port{
+#portfolio {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+}
+
+#portfolio span {
+  font-size: 100px;
+  font-weight: normal;
+  transition: font-weight 0.3s, font-family 0.3s;
+}
+
+#portfolio span:hover {
+  font-weight: bold;
   font-style: italic;
-  font-size: 150px;
+  font-family: 'Playfair Display', serif;
 }
 
-.head{
+.head {
   position: absolute;
   top: 0;
-  pad: 10px;
+  padding: 10px;
   line-height: 0.7;
   font-size: xx-large;
-  justify-items: center;
   font-family: 'Playfair Display', serif;
-
 }
 
-sup{
+sup {
   font-size: small;
 }
 
-.footer{
+.footer {
   position: absolute;
   bottom: 5px;
 }
