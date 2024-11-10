@@ -75,3 +75,21 @@ sup {
   position: absolute;
   bottom: 5px;
 }
+
+
+/* Initially hide the text */
+.enter-text {
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* You can adjust the color */
+}
+
+/* When the image is hovered, hide the image and show the text */
+.menu:hover .file-icon {
+  display: none;
+}
+
+.menu:hover .enter-text {
+  display: inline-block;
+}
